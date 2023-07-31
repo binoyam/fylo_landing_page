@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --VeryDarkBlue: hsl(243, 87%, 12%);
+    --DesaturatedBlue: hsl(238, 22%, 44%);
+    --BrightBlue: hsl(224, 93%, 58%);
+    --ModerateCyan: hsl(170, 45%, 43%);
+    --LightGrayishBlue: hsl(240, 75%, 98%);
+    --LightGray: hsl(0, 0%, 75%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-color: white
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 0 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    padding: 0 4rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--VeryDarkBlue);
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+/*"all your files...", top section*/
+.main-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    padding: 0 4rem;
+}
+
+.text {
+    width: 50%;
+}
+
+.img-div {
+    width: 50%;
+}
+
+.text h1 {
+    color: var(--VeryDarkBlue);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 2rem
+}
+
+.text p.sub {
+    width: 70%;
+    line-height: 1.3;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 1rem;
+}
+
+/*form*/
+form.form-top {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.form-top #email,
+.form-top #submit {
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-top #email {
+    width: 50%;
+    margin-right: 1rem;
+    border: 1px solid var(--LightGray);
+}
+
+::placeholder {
+    color: var(--LightGray);
+}
+
+.form-top #submit {
+    width: 30%;
+    background-color: var(--BrightBlue);
+    color: var(--LightGrayishBlue);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 5px 7px -3px hsl(224, 89%, 75%);
+
+}
+
+.form-top #submit:hover {
+    background-color: hsl(224, 100%, 73%);
+}
+
+/*main bottom*/
+.main-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 4rem 10rem;
+}
+
+.main-bottom .text {
+    width: 60%;
+}
+
+.main-bottom a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--ModerateCyan);
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+
+.main-bottom a:hover {
+    color: hsl(170, 58%, 57%);
+}
+
+.main-bottom a span {
+    border-bottom: 1px solid var(--ModerateCyan);
+}
+
+.main-bottom a span:hover {
+    border-bottom: 1px solid (170, 58%, 57%);
+
+}
+
+.main-bottom a span.see {
+    padding-right: 5px;
+}
+
+/*testimonial*/
+.main-bottom .testimony {
+    width: 60%;
+    background-color: var(--LightGrayishBlue);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 40px -3px var(--LightGray);
+}
+
+.testimony img#quotation {
+    width: 30px;
+}
+
+.testimony p.quote {
+    color: var(--DesaturatedBlue);
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0.5rem 0 1rem;
+}
+
+.testimony .profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img.avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile p.name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 6px;
+}
+
+.profile p.job {
+    color: var(--DesaturatedBlue);
+}
+
+/*footer 1 top*/
+.footer1 {
+    padding: 4rem;
+    background-color: var(--DesaturatedBlue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer1-text {
+    width: 60%;
+}
+
+.footer1 h3 {
+    color: var(--LightGrayishBlue);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer1 p {
+    color: var(--LightGrayishBlue);
+    width: 70%;
+    line-height: 1.4;
+}
+
+/*footer form*/
+form.form-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.form-bottom #email,
+.form-bottom #submit {
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-bottom #email {
+    width: 90%;
+    margin-bottom: 1rem;
+    border: 1px solid var(--LightGray);
+}
+
+::placeholder {
+    color: var(--LightGray);
+}
+
+.form-bottom #submit {
+    width: 60%;
+    background-color: var(--BrightBlue);
+    color: var(--LightGrayishBlue);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form-bottom #submit:hover {
+    background-color: hsl(224, 100%, 73%);
+}
+
+/*footer two2*/
+
+footer .footer2 {
+    display: flex;
+    background-color: var(--VeryDarkBlue);
+    padding: 8rem 4rem 4rem;
+    color: var(--LightGray);
+    font-size: 18px;
+}
+
+.footer2 a {
+    text-decoration: none;
+    margin: 1rem 0;
+    color: var(--LightGray);
+}
+
+.footer2 a:hover {
+    color: var(--DesaturatedBlue);
+}
+
+/*first div in footer2 /logo div*/
+
+.footer2 .fylo div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.footer2 .fylo {
+    width:300px;
+    margin-right: 6rem;
+}
+.footer2 .fylo div p{
+    display: block;
+}
+/*about-us and contact-us div*/
+.about,
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin-top: 4rem;
+    margin-right: 5rem;
+}
+
+/*socials div*/
+.socials {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--LightGray);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.socials a:hover {
+    border: 1px solid var(--DesaturatedBlue);
+}
+ /* for laptop screen  */
+@media only screen and (max-width:1050px){
+    .text h1 {
+        font-size: 2rem;
+    }
+}
+/*for tablets screens*/
+@media only screen and (max-width:820px) {
+    .container {
+        padding: 2rem 0 0;
+    }
+
+    header {
+        padding: 0 2rem;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 16px;
+
+    }
+
+    .main-top {
+        flex-direction: column-reverse;
+        padding: 0 4rem;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 2.3rem;
+    }
+
+    .text,
+    .img-div,
+    .text p.sub,
+    .form-top #submit,
+    .footer1-text,
+    .form-bottom #email,
+    .form-bottom #submit {
+        width: 100%;
+    }
+
+    form.form-top {
+        flex-direction: column;
+    }
+
+    .form-top #email {
+        width: 100%;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .main-bottom .text {
+        margin-top: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-bottom .text p.sub {
+        text-align: left;
+    }
+
+    .main-bottom a {
+        justify-content: center;
+    }
+
+    .main-bottom .testimony {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .main-bottom .testimony {
+        text-align: left;
+    }
+
+    .footer1 {
+        flex-direction: column;
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+
+    .footer1 p {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    form.form-bottom {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    footer .footer2 {
+        flex-direction: column;
+        padding: 4rem 8rem 2rem;
+    }
+
+    .about,
+    .contact {
+        width: 300px;
+        margin-top: 2rem;
+    }
+
+    .socials {
+        margin: 0 auto;
+    }
+}
+
+/*for small screens*/
+
+@media only screen and (max-width: 550px) {
+    .container {
+        padding: 2rem 0 0;
+    }
+
+    header {
+        padding: 0 1rem;
+    }
+
+    header img {
+        width: 30%;
+    }
+
+    nav {
+        gap: 1px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 13px;
+    }
+
+    .main-top {
+        padding: 0 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .text p.sub {
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+
+    .form-top #email,
+    .form-top #submit {
+        padding: 0.5rem;
+    }
+
+    .form-top #submit {
+        font-size: 12px;
+    }
+
+    .main-bottom {
+        background: url(./images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 4rem 1rem 5rem;
+    }
+
+    .main-bottom h1 {
+        font-size: 1rem;
+    }
+
+    .main-bottom a {
+        font-size: 14px;
+        margin-top: 2rem;
+    }
+
+    .main-bottom .testimony {
+        padding: 1rem;
+    }
+
+    .testimony img#quotation {
+        width: 18px;
+    }
+
+    .testimony p.quote {
+        font-size: 11.5px;
+    }
+
+    .profile img.avatar {
+        width: 30px;
+        height: 30px;
+        margin-right: 6px;
+    }
+
+    .profile p.name {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .profile p.job {
+        font-size: 9px;
+    }
+
+    .footer1 {
+        padding: 4rem 1rem;
+    }
+
+    .footer1 h3 {
+        font-size: 1rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .footer1 p {
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+    }
+
+    form.form-bottom {
+        width: 80%;
+    }
+
+    .form-bottom #email,
+    .form-bottom #submit {
+        padding: 0.4rem;
+        border-radius: 2px;
+    }
+
+    .form-bottom #email {
+        margin-bottom: 8px;
+    }
+
+    .form-bottom #submit {
+        font-size: 12px;
+    }
+
+    footer .footer2 {
+        padding: 4rem 1rem;
+    }
+
+    .footer2 a {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .footer2 .fylo {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .footer2 .fylo div {
+        gap: 10px;
+    }
+    .fylo div img{
+        width: 20px;
+    }
+    .fylo div p{
+        font-size: 14px;
+    }
+    .about,
+    .contact {
+        width: auto;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        margin-right: 0;
+    }
+    .socials a {
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px; 
+    }
+}
